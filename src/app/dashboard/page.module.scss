@@ -1,0 +1,82 @@
+@import '../../libs/variables.scss';
+.todo {
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: lightgrey;
+  color: $white;
+  position: relative;
+
+  .hiddenForm {
+    display: none;
+  }
+  .first {
+    display: flex;
+    justify-content: center;
+
+    input {
+      margin-right: 1rem;
+      border: none;
+      padding: 0.5rem 1rem;
+      display: inline-flex;
+      &:focus-visible {
+        border-bottom: solid 2px $blue;
+        outline: none;
+      }
+    }
+    button {
+      background-color: $blue;
+      border: none;
+      color: $white;
+      padding: 0.3rem 0.5rem;
+      &:hover {
+        background-color: lighten($color: $blue, $amount: 20%);
+      }
+    }
+  }
+  .error {
+    text-align: center;
+    color: red;
+  }
+  ul {
+    margin-top: 2rem;
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      .textContainer {
+        display: flex;
+        span {
+          margin-right: 0.5rem;
+          color: $blue;
+        }
+        p {
+          color: black;
+          text-overflow: ellipsis;
+        }
+      }
+      .completed {
+        text-decoration: line-through;
+      }
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          background-color: $blue;
+          border: none;
+          color: $white;
+          padding: 0.3rem 0.5rem;
+          &:hover {
+            background-color: lighten($color: $blue, $amount: 20%);
+          }
+
+          &:first-child {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
