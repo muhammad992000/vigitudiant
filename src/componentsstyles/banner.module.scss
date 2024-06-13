@@ -1,0 +1,49 @@
+@import '../libs/variables.scss';
+.header {
+  margin-top: 1rem;
+  div {
+    div {
+      div {
+        background-color: $white;
+        padding: 0.5rem 0.6rem;
+        border-radius: 1rem;
+        h1 {
+          color: $blue;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: fantasy;
+          font-weight: 900;
+        }
+        p {
+          font-size: $paragraphFontSize;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            .link {
+              text-decoration: none;
+              color: $white;
+            }
+            background-color: $blue;
+            margin-right: 1rem;
+            color: $white;
+            padding: 0.3rem 0.6rem;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 0.2rem;
+
+            &:hover {
+              background-color: lighten($color: $blue, $amount: 20);
+            }
+
+            :first-of-type {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

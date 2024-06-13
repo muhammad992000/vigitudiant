@@ -10,6 +10,14 @@
   .hiddenForm {
     display: none;
   }
+  .showedForm {
+    display: block;
+    position: fixed;
+    top: 50%;
+    margin: 0, auto;
+    left: 50%;
+    right: 50%;
+  }
   .first {
     display: flex;
     justify-content: center;

@@ -1,0 +1,17 @@
+@import '../componentsstyles//banner.module.scss';
+.Box {
+  box-sizing: border-box;
+  background-color: $white;
+  padding: 0.5rem 0.6rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+
+  h3 {
+    color: $blue;
+    font-weight: bold;
+    font-family: fantasy;
+    font-weight: 900;
+  }
+  p {
+  }
+}

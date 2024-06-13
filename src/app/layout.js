@@ -1,6 +1,7 @@
-import BasicExample from '../components/navar';
-import styles from './globals.scss';
+import BasicExample from '../components/navbar';
+import './global.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Facultes } from '../components/facultes';
 
 export const metadata = {
   title: 'Vigitudiant',
@@ -10,8 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={styles.body}>{children}</body>
-      <footer>footer</footer>
+      <body>
+        {<BasicExample></BasicExample>}
+
+        {children}
+      </body>
     </html>
   );
 }

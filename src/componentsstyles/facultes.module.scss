@@ -1,0 +1,30 @@
+@import '../libs/variables.scss';
+.facultes {
+  h1 {
+    color: $blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    article {
+      margin-right: 1rem;
+      .link {
+        color: $blue;
+        text-decoration: none;
+        &:hover {
+          color: darken($color: $blue, $amount: 60%);
+        }
+      }
+      .active {
+        color: darken($color: $blue, $amount: 60%);
+      }
+    }
+  }
+}

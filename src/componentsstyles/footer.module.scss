@@ -1,0 +1,13 @@
+@import '../libs/variables.scss';
+.footer {
+  background-color: #333333;
+
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: $white;
+  }
+}
